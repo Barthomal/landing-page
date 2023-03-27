@@ -1,13 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15vh;
+}
 
 .header {
-display: flex;
-flex-wrap: wrap;
-margin: 0% 25%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    background-color: darkblue;
 }
 
 .header-top {
+    display: flex;
     height: 50px;
-    width: 100vh
+    width: 70vh;
+    border: 1px solid black;
+    padding: 8px;
+    background-color: darkslategray;
+}
+
+.header-left {
+    width: 25vh;
+}
+.header-right {
+    display: flex;
+    width: 45vh;
+
+}
+
+ul {
+    list-style: none;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 16px;
+    display: flex;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 /* maybe attempt to have the top part of the header stay put, and have the bottom half scroll up past it? 
 Can I do that thing where it disappears as you scroll down, but reappears when you start scrolling back up? Or maybe mouseover? 
