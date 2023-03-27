@@ -1,0 +1,15 @@
+
+.header {
+display: flex;
+flex-wrap: wrap;
+margin: 0% 25%;
+}
+
+.header-top {
+    height: 50px;
+    width: 100vh
+}
+/* maybe attempt to have the top part of the header stay put, and have the bottom half scroll up past it? 
+Can I do that thing where it disappears as you scroll down, but reappears when you start scrolling back up? Or maybe mouseover? 
+
+
