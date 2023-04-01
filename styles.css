@@ -140,6 +140,11 @@ h2 {
     border: 4px solid #3882F6
 }
 
+.img-date {
+    font-style: italic;
+    margin: 0;
+}
+
 .box {
     width: 21%;
     height: 41%;
@@ -234,7 +239,6 @@ p.author {
     color: #f9faf8
 }
 
-.
 /* maybe attempt to have the top part of the header stay put, and have the bottom half scroll up past it? 
 Can I do that thing where it disappears as you scroll down, but reappears when you start scrolling back up? Or maybe mouseover? 
 
