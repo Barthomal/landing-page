@@ -1,47 +1,240 @@
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0 15vh;
+    padding: 0px;
+    margin: 0px;
 }
 
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid black;
-    background-color: darkblue;
+p {
+    font-size: 16px;
+}
+
+.header-top,
+.header-bottom,
+.footer {
+    background-color: #1f2937;
 }
 
 .header-top {
     display: flex;
     height: 50px;
-    width: 70vh;
-    border: 1px solid black;
-    padding: 8px;
-    background-color: darkslategray;
+}
+
+.header-bottom {
+    padding-bottom: 16px;
 }
 
 .header-left {
-    width: 25vh;
+    margin-left: 100px;
 }
-.header-right {
-    display: flex;
-    width: 45vh;
 
+h1.logo-text {
+    font-size: 24px;
+    color: #f9faf8;
+    margin: 0;
+    padding-top: 12px;
+}
+
+button {
+    background-color: #3882F6;
+    color: #f9faf8;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: none;
+}
+
+.header-right {
+    margin-right: 100px;
+}
+
+.header-top .header-right {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.header-bottom {
+    display: flex;
+}
+
+.header-bottom .header-left {
+    flex: 1;
+}
+
+.header-bottom .header-right {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.header-image {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    background-color: lightslategray;
+    min-width: 400px;
+    max-width: 600px;
+    height: auto;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 100px;
+}
+
+.new-day {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+
+}
+
+.header-top a,
+.header-bottom p {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 ul {
     list-style: none;
     justify-content: flex-end;
     flex: 1;
-    gap: 16px;
+    gap: 32px;
     display: flex;
-
+    margin: none;
 }
 
 a {
     text-decoration: none;
-    color: white;
 }
+
+.body-top {
+    display: flex;    
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 20vw;
+    gap: 16px;
+}
+
+h2 {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+
+.selfie {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25%;
+    border: 4px solid #3882F6
+}
+
+.box {
+    width: 21%;
+    height: 41%;
+    flex: 1 0 21%;
+}
+
+
+.body-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 72px 20vw;
+    background-color: #E5E7EB;
+}
+p.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    padding: 8px;
+    margin: 0px;
+}
+
+p.author {
+    align-self: flex-end;
+    font-weight: bold;
+    padding: 0px;
+    margin: 8px 4em 0 0;
+    font-size: 18px;
+}
+
+.body-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.ribbon {
+    display: flex;
+    width: 75%;
+    background-color: #3882F6; 
+    justify-content: center; 
+    border-radius: 8px;
+    padding: 16px 48px;
+    margin: 48px;
+}
+
+.ribbon p, 
+.ribbon h3 {
+    color: #f9faf8;
+    padding: 0;
+    margin: 4px;
+}
+
+.ribbon h3 {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.ribbon p {
+    font-size: 18px;
+}
+
+.ribbon-left {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    padding: 32px;
+}
+
+.ribbon-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+}
+
+.ribbon-right button {
+    border: 2px solid #f9faf8;
+    max-height: 3em;
+    padding: 12px 24px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.footer p {
+    color: #f9faf8
+}
+
+.
 /* maybe attempt to have the top part of the header stay put, and have the bottom half scroll up past it? 
 Can I do that thing where it disappears as you scroll down, but reappears when you start scrolling back up? Or maybe mouseover? 
 
